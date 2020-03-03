@@ -77,20 +77,14 @@ bool j1App::Awake()
 
 	if (ret == true)
 	{
-
-		// MARC
-
 		
-		p2List_item<j1Module*>* item;
-		item = modules.start;
-
-		while (item != NULL && ret == true)
-		{
-			ret = item->data->Awake(config.child(item->data->name.GetString()));
-			item = item->next;
-		}
+		input->Awake();
+		win->Awake();
+		render->Awake();
+		tex->Awake();
+		audio->Awake();
+		scene->Awake();
 		
-
 	}
 
 	return ret;

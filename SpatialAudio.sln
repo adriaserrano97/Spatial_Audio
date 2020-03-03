@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpatialAudio", "SpatialAudio.vcxproj", "{AF54FB64-4D8F-437F-A449-221E0C127632}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpatialAudio", "SpatialAudio\SpatialAudio.vcxproj", "{AF54FB64-4D8F-437F-A449-221E0C127632}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

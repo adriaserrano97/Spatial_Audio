@@ -22,18 +22,17 @@ j1Render::~j1Render()
 }
 
 // Called before render is available
-bool j1Render::Awake(pugi::xml_node& config)
+bool j1Render::Awake()
 {
 	
 	bool ret = true;
 	// load flags
 	Uint32 flags = SDL_RENDERER_ACCELERATED;
 
-	if(config.child("vsync").attribute("value").as_bool(true) == true)
-	{
+	
 		flags |= SDL_RENDERER_PRESENTVSYNC;
 		vsinc = true;
-	}
+	
 	
 	
 	renderer = SDL_CreateRenderer(App->win->window, -1, flags);
@@ -105,26 +104,6 @@ bool j1Render::CleanUp()
 	return true;
 }
 
-// Load Game State
-bool j1Render::Load(pugi::xml_node& data)
-{
-	camera.x = data.child("camera").attribute("x").as_int();
-	camera.y = data.child("camera").attribute("y").as_int();
-
-	return true;
-}
-
-// Save Game State
-bool j1Render::Save(pugi::xml_node& data) const
-{
-	pugi::xml_node cam = data.append_child("camera");
-
-
-	cam.append_attribute("x") = camera.x;
-	cam.append_attribute("y") = camera.y;
-
-	return true;
-}
 
 void j1Render::SetBackgroundColor(SDL_Color color)
 {

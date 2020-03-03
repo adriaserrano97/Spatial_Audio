@@ -29,7 +29,7 @@ j1Input::~j1Input()
 }
 
 // Called before render is available
-bool j1Input::Awake(pugi::xml_node& config)
+bool j1Input::Awake()
 {
 	
 	bool ret = true;

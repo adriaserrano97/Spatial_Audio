@@ -18,7 +18,7 @@ j1Window::~j1Window()
 }
 
 // Called before render is available
-bool j1Window::Awake(pugi::xml_node& config)
+bool j1Window::Awake()
 {
 	
 	bool ret = true;
@@ -31,14 +31,14 @@ bool j1Window::Awake(pugi::xml_node& config)
 	{
 		//Create window
 		Uint32 flags = SDL_WINDOW_SHOWN;
-		bool fullscreen = config.child("fullscreen").attribute("value").as_bool(false);
-		bool borderless = config.child("borderless").attribute("value").as_bool(false);
-		bool resizable = config.child("resizable").attribute("value").as_bool(false);
-		bool fullscreen_window = config.child("fullscreen_window").attribute("value").as_bool(false);
+		bool fullscreen = false;
+		bool borderless = false;
+		bool resizable = false;
+		bool fullscreen_window = false;
 
-		width = config.child("resolution").attribute("width").as_int(640);
-		height = config.child("resolution").attribute("height").as_int(480);
-		scale = config.child("resolution").attribute("scale").as_int(1);
+		width = 1024;
+		height = 768;
+		scale = 1;
 
 		if(fullscreen == true)
 		{
