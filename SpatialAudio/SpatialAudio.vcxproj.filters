@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{9bf8e7d0-d264-411d-a777-56ac3eeb6e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\PuguiXML">
+      <UniqueIdentifier>{6e01b091-2f01-4a3e-add2-5d79c3623551}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="j1App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Textures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="p2Defs.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="p2List.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="p2Log.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="p2Qeue.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="p2SString.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="PugiXml\src\pugiconfig.hpp">
+      <Filter>Tools\PuguiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="PugiXml\src\pugixml.hpp">
+      <Filter>Tools\PuguiXML</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="j1App.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Audio.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Input.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Main.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Render.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Scene.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Textures.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Window.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="PugiXml\src\pugixml.cpp">
+      <Filter>Tools\PuguiXML</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

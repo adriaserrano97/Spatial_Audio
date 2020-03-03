@@ -1,0 +1,39 @@
+<!-- Config file for the game -->
+
+<config>
+  <app framerate_cap="30">
+   	<title>Spatial Audio Task</title>
+   	<organization>UPC-CITM-AdriaSerrano</organization> 
+  </app>
+	
+  <renderer>
+    <vsync value="false"/>
+    <speedcamera value="12"/>
+  </renderer>
+
+  <window>
+    <resolution width="1024" height="768" scale="1"/>
+    <fullscreen value="false"/>
+    <borderless value="false"/>
+    <resizable value="false"/>
+    <fullscreen_window value="false"/>
+  </window>
+
+  <audio>
+	<folder>audio/fx/</folder>
+	<fx 	jump="jump_sound.wav" 
+		bomb="bomb.wav"
+	    	button_1="b1.wav" 
+		button_3="b3.wav"
+	   	coin="coin.wav" 
+		option_denied="option_denied.wav"
+	    	powerup="powerup.wav" 
+	>
+	</fx>
+  </audio>
+
+  <scene>
+	
+  </scene>
+
+</config>
