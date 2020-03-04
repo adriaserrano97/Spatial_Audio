@@ -157,6 +157,31 @@ bool j1Scene::Update(float dt)
 		App->audio->PlayFx(5, App->audio->small_sound, 0);
 	}
 	*/
+
+	//TODO 7. In the configuration of the channel, take into account the angle that forms the camera position according to 0,0. 
+	// Again, math is required. You have at your disposal trigonometry funcs.
+
+	/*
+	if (App->input->GetKey(SDL_SCANCODE_F5) == KEY_DOWN)
+	{
+		Mix_HaltChannel(-1);
+		//int distance = (App->render->camera.x * App->render->camera.x + App->render->camera.y * App->render->camera.y); // cause remember, inverse square law
+		//distance = distance / 500; //to scale a bit
+		//int volume = (distance * 255) / App->render->camera.w;
+		//if (volume < 0) { volume = 0; } if (volume > 255) { volume =  255; }
+
+		float angle = 90;
+		if (App->render->camera.y == 0) { 
+			angle = atan(-App->render->camera.x); }
+		else { 
+			angle = atan((-App->render->camera.x) / (App->render->camera.y)); 
+		}
+		angle = angle * 57 + 360; //conversion from rad to degree +270. We add +90 extra cause sdl has 0 as its front for some fkn reason. 
+
+		Mix_SetPosition(5, angle , 0);
+		App->audio->PlayFx(5, App->audio->small_sound, 0);
+	}
+	*/
 	//just moving camera around
 	if (App->input->GetKey(SDL_SCANCODE_DOWN) == KEY_REPEAT)
 		App->render->camera.y -= 10;
