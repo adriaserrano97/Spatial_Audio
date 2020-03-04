@@ -130,6 +130,33 @@ bool j1Scene::Update(float dt)
 		App->audio->PlayFx(4, App->audio->small_sound, 0);
 	}
 	*/
+
+
+	//TODO 5. If you've made it this far, you don't need my help to do this TODO.
+	/*
+	if (App->input->GetKey(SDL_SCANCODE_F5) == KEY_DOWN)
+	{
+		Mix_HaltChannel(-1);
+		App->audio->PlayFx(5, App->audio->small_sound, 0);
+	}
+	*/
+
+
+	//TODO 6. Configure the channel before playing the chunk. Take into account variable distance!
+				//DISCLAIMER: You'll need a little math here.
+
+	/*
+	if (App->input->GetKey(SDL_SCANCODE_F5) == KEY_DOWN)
+	{
+		Mix_HaltChannel(-1);
+		int distance = (App->render->camera.x * App->render->camera.x + App->render->camera.y * App->render->camera.y); // cause remember, inverse square law
+		distance = distance / 500; //to scale a bit
+		int volume = (distance * 255) / App->render->camera.w;
+		if (volume < 0) { volume = 0; } if (volume > 255) { volume =  255; }
+		Mix_SetPosition(5, 0,volume);
+		App->audio->PlayFx(5, App->audio->small_sound, 0);
+	}
+	*/
 	//just moving camera around
 	if (App->input->GetKey(SDL_SCANCODE_DOWN) == KEY_REPEAT)
 		App->render->camera.y -= 10;
