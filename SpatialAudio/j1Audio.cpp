@@ -30,6 +30,7 @@ bool j1Audio::Awake()
 		active = false;
 		ret = true;
 	}
+	//TODO 1: Nothing to do here. Just wanted to remind you all that we need to load support for formats.
 
 	// load support for OGG
 	int flags = MIX_INIT_OGG;
@@ -82,46 +83,48 @@ bool j1Audio::CleanUp()
 }
 
 // Play a music file
-bool j1Audio::PlayMusic(const char* path, float fade_time)
+bool j1Audio::PlayMusic(const char* path, float fade_time) //path = where the .ogg is || fade_time = how long takes the fadeout. I reccommend 4.0F
 {
 	bool ret = true;
 
+	// If the Mixer has not been initiated, exit the function.
 	if(!active)
 		return false;
 
+	//If the music is already loaded:
 	if(music != NULL)
 	{
-		if(fade_time > 0.0f)
+		if(fade_time > 0.0f) 
 		{
-			Mix_FadeOutMusic(int(fade_time * 1000.0f));
+			Mix_FadeOutMusic(int(fade_time * 1000.0f)); //This plays the music! argument is in milisecond, so we multiply by 1000
 		}
 		else
 		{
-			Mix_HaltMusic();
+			Mix_HaltMusic(); //This stops music. It's useful: we can use this function to change between different songs because of this!
 		}
 
-		// this call blocks until fade out is done
+		// this call blocks until fade out is done, then frees the music
 		Mix_FreeMusic(music);
 	}
-
-	music = Mix_LoadMUS(path);
+	//If it is not loaded, load it
+	music = Mix_LoadMUS(path); //<- this command is what you want if you wanna load music manually
 
 	if(music == NULL)
 	{
-		ret = false;
+		ret = false; //if failed to load, just exit.
 	}
 	else
 	{
 		if(fade_time > 0.0f)
 		{
-			if(Mix_FadeInMusic(music, -1, (int) (fade_time * 1000.0f)) < 0)
+			if(Mix_FadeInMusic(music, -1, (int) (fade_time * 1000.0f)) < 0) //that -1 indicates infinite loops. Can be changed for an actual integer.
 			{
 				ret = false;
 			}
 		}
 		else
 		{
-			if(Mix_PlayMusic(music, -1) < 0)
+			if(Mix_PlayMusic(music, -1) < 0) //that -1 indicates infinite loops. Can be changed for an actual integer.
 			{
 				ret = false;
 			}

@@ -29,19 +29,15 @@ bool j1Scene::Awake()
 // Called before the first frame
 bool j1Scene::Start()
 {
-	
-
-	
-	App->audio->PlayMusic("audio/music/elevator_music", 4.0F);
-		
-
-	/*
 	background = App->tex->Load("textures/background.png");
 	debug_tex = App->tex->Load("textures/test.png");
-	*/
-		
-	
 
+	//TODO 1: Use PlayMusic function in module Audio. Check the function, I've added detailed explanation on what it does.
+	//The music you wanna be playing is "elevator_music.ogg" found in game/audio/music.
+	//"PlayMusic" is an amalgamation of several SDL functions regarding loading, playing, fadeout, looping... It makes everything easier 
+	
+	//App->audio->PlayMusic("audio/music/elevator_music.ogg", 4.0F);
+		
 	return true;
 }
 
@@ -60,8 +56,21 @@ bool j1Scene::PreUpdate()
 // Called each loop iteration
 bool j1Scene::Update(float dt)
 {
-	
-	
+	//TODO 2: Use the structure on TODO1 and just add some "if..."
+	//Notice that PlayMusic automatically handles fadeout. Hooray!
+
+	/*
+	if (App->input->GetKey(SDL_SCANCODE_F1) == KEY_DOWN)
+	{
+		App->audio->PlayMusic("audio/music/elevator_music.ogg", 4.0F);
+	}
+	if (App->input->GetKey(SDL_SCANCODE_F2) == KEY_DOWN)
+	{
+		App->audio->PlayMusic("audio/music/music_sadpiano.ogg", 4.0F);
+	}
+	*/
+
+	//just moving camera around
 	if (App->input->GetKey(SDL_SCANCODE_DOWN) == KEY_REPEAT)
 		App->render->camera.y -= 10;
 
