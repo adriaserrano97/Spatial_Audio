@@ -49,10 +49,10 @@ bool j1Audio::Awake()
 		ret = true;
 	}
 
+	//TODO 4: Nothing to do here. Just wanted you to know where we load the sfx, and how it's called.
 	//Load SFX needed. The Load function returns the int we need to call it in PlayFx, so we store it for easier use.
-
-	//jump_sound =		LoadFx(PATH(fxFolder.GetString(), config.child("fx").attribute("jump").as_string()));
-	//bomb_sound =		LoadFx(PATH(fxFolder.GetString(), config.child("fx").attribute("bomb").as_string()));
+	small_sound = LoadFx("audio/fx/small_sound.wav");
+	
 	
 	return ret;
 }
@@ -83,7 +83,7 @@ bool j1Audio::CleanUp()
 }
 
 // Play a music file
-bool j1Audio::PlayMusic(const char* path, float fade_time) //path = where the .ogg is || fade_time = how long takes the fadeout. I reccommend 4.0F
+bool j1Audio::PlayMusic(const char* path, float fade_time) //path = where the .ogg is || fade_time = how long takes the fadeout. I reccommend 1.0F < x < 2.0F
 {
 	bool ret = true;
 
@@ -158,7 +158,7 @@ unsigned int j1Audio::LoadFx(const char* path)
 }
 
 // Play WAV
-bool j1Audio::PlayFx(unsigned int id, int repeat)
+bool j1Audio::PlayFx(int channel, unsigned int id, int repeat)
 {
 	bool ret = false;
 	id += 0;
@@ -167,9 +167,7 @@ bool j1Audio::PlayFx(unsigned int id, int repeat)
 
 	if(id > 0 && id <= fx.count())
 	{
-		Mix_PlayChannel(-1, fx[id - 1], repeat);
-		//Input explanation: first argument is channel, -1  meanining first free channel. Second argument is a pointer to the chunk to play.
-		//3rd argument is number of loops. if you want in once, put 0. -1 plays it "infinite" times.
+		Mix_PlayChannel(channel, fx[id - 1], repeat);
 	}
 
 	return ret;

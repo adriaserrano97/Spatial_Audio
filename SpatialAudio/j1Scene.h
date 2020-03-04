@@ -34,6 +34,11 @@ public:
 
 	SDL_Texture* debug_tex = nullptr;
 	SDL_Texture* background = nullptr;
+
+
+	//TODO 3: you might need to add something here... 
+
+	int SongPlaying = 0;
 };
 
 #endif // __j1SCENE_H__

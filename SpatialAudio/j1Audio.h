@@ -33,15 +33,11 @@ public:
 	unsigned int LoadFx(const char* path);
 
 	// Play a previously loaded WAV
-	bool PlayFx(unsigned int fx, int repeat = 0);
+	bool PlayFx(int channel, unsigned int fx, int repeat = 0);
 
 	// List of sfx
-	uint jump_sound;
-	uint bomb_sound;
+	uint small_sound;
 	
-
-	//UI_Listener
-	void ListenerUI(UIElement* UI_element);
 
 private:
 	p2SString			fxFolder;
