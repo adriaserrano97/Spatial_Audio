@@ -33,6 +33,7 @@ public:
 	bool CleanUp();
 
 	SDL_Texture* debug_tex = nullptr;
+	SDL_Texture* background = nullptr;
 };
 
 #endif // __j1SCENE_H__

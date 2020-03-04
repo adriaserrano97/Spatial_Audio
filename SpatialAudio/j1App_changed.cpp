@@ -9,13 +9,9 @@
 #include "j1Scene.h"
 #include "j1App.h"
 
-
 // Constructor
 j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 {
-	
-
-	
 
 	//modules
 	input = new j1Input();
@@ -25,26 +21,16 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	audio = new j1Audio();
 	scene = new j1Scene();
 	
-
-	
 	// Ordered for awake / Start / Update
 	// Reverse order of CleanUp
 	AddModule(input);
 	AddModule(win);
 	AddModule(tex);
-	
 	AddModule(audio);
-
 	AddModule(scene);
 	
-
-
-
 	// render last to swap buffer
 	AddModule(render);
-
-	
-	
 }
 
 // Destructor
@@ -71,17 +57,15 @@ void j1App::AddModule(j1Module* module)
 // Called before render is available
 bool j1App::Awake()
 {
-	
-	
 	pugi::xml_document	config_file;
 	pugi::xml_node		config;
 	pugi::xml_node		app_config;
 
 	bool ret = false;
-		
+
 	config = LoadConfig(config_file);
 
-	if(config.empty() == false)
+	if (config.empty() == false)
 	{
 		// self-config
 		ret = true;
@@ -89,21 +73,20 @@ bool j1App::Awake()
 		title.create(app_config.child("title").child_value());
 		organization.create(app_config.child("organization").child_value());
 
-		frameRate = app_config.attribute("framerate_cap").as_int();
-		cap_frames = true;
 	}
 
-	if(ret == true)
+	if (ret == true)
 	{
-		p2List_item<j1Module*>* item;
-		item = modules.start;
-
-		while(item != NULL && ret == true)
-		{
-			ret = item->data->Awake();
-			item = item->next;
-		}
+		
+		input->Awake();
+		win->Awake();
+		render->Awake();
+		tex->Awake();
+		audio->Awake();
+		scene->Awake();
+		
 	}
+
 	return ret;
 }
 
@@ -128,7 +111,7 @@ bool j1App::Update()
 {
 
 	bool ret = true;
-	
+	PrepareUpdate();
 
 	if(input->GetWindowEvent(WE_QUIT) == true)
 		ret = false;
@@ -143,6 +126,7 @@ bool j1App::Update()
 		ret = PostUpdate();
 
 
+	FinishUpdate();
 	return ret;
 }
 
@@ -159,6 +143,22 @@ pugi::xml_node j1App::LoadConfig(pugi::xml_document& config_file) const
 	return ret;
 }
 
+// ---------------------------------------------
+void j1App::PrepareUpdate()
+{
+	
+}
+
+// ---------------------------------------------
+void j1App::FinishUpdate()
+{
+	static char title[256];
+	
+	sprintf_s(title, 256, "Spatial Audio - CITM / UPC - ADRIA SERRANO");
+			
+	App->win->SetTitle(title);
+}
+
 // Call modules before each loop iteration
 bool j1App::PreUpdate()
 {
@@ -167,7 +167,7 @@ bool j1App::PreUpdate()
 	item = modules.start;
 	j1Module* pModule = NULL;
 
-	frames;
+	
 
 	for(item = modules.start; item != NULL && ret == true; item = item->next)
 	{
@@ -199,7 +199,7 @@ bool j1App::DoUpdate()
 			continue;
 		}
 
-		ret = item->data->Update(dt);
+	
 	}
 
 	return ret;
@@ -223,7 +223,7 @@ bool j1App::PostUpdate()
 		ret = item->data->PostUpdate();
 	}
 
-	frames++;		//NOT SURE
+	//frames++;		//NOT SURE
 	return ret;
 }
 

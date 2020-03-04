@@ -32,12 +32,13 @@ bool j1Scene::Start()
 	
 
 	
-	App->audio->PlayMusic("audio/music/ace_of_flopdisks.ogg", 4.0F);
+	App->audio->PlayMusic("audio/music/elevator_music", 4.0F);
 		
 
-
-	debug_tex = App->tex->Load("maps/path2.png");
-	
+	/*
+	background = App->tex->Load("textures/background.png");
+	debug_tex = App->tex->Load("textures/test.png");
+	*/
 		
 	
 

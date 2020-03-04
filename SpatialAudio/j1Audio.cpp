@@ -31,7 +31,7 @@ bool j1Audio::Awake()
 		ret = true;
 	}
 
-	// load support for the JPG and PNG image formats
+	// load support for OGG
 	int flags = MIX_INIT_OGG;
 	int init = Mix_Init(flags);
 

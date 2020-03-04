@@ -6,7 +6,6 @@
 
 #include "p2List.h"
 #include "j1Module.h"
-
 #include "PugiXml\src\pugixml.hpp"
 
 typedef unsigned int uint;
@@ -18,14 +17,7 @@ class j1Render;
 class j1Textures;
 class j1Audio;
 class j1Scene;
-class j1Map;
-class j1Collision;
-class j1FadeToBlack;
-class j1PathFinding;
-class j1EntityManager;
-class j1Fonts;
-class j1Gui;
-class j1Console;
+
 
 
 class j1App
@@ -59,12 +51,16 @@ public:
 	const char* GetTitle() const;
 	const char* GetOrganization() const;
 
-	
-
 private:
 
 	// Load config file
 	pugi::xml_node LoadConfig(pugi::xml_document&) const;
+
+	// Call modules before each loop iteration
+	void PrepareUpdate();
+
+	// Call modules before each loop iteration
+	void FinishUpdate();
 
 	// Call modules before each loop iteration
 	bool PreUpdate();
@@ -75,7 +71,6 @@ private:
 	// Call modules after each loop iteration
 	bool PostUpdate();
 
-	
 
 public:
 
@@ -86,21 +81,6 @@ public:
 	j1Textures*			tex;
 	j1Audio*			audio;
 	j1Scene*			scene;
-	j1Map*				map;
-	j1Collision*		colliders;
-	j1FadeToBlack*		fade;
-	j1PathFinding*		pathfinding;
-	j1EntityManager*	entityManager;
-	j1Fonts*			font;
-	j1Gui*				gui;
-	j1Console*			console;
-
-	//timers
-
-	
-	uint32_t				frames;
-
-	uint				frameRate = 0;
 
 private:
 	p2List<j1Module*>	modules;
@@ -110,11 +90,6 @@ private:
 
 	p2SString			title;
 	p2SString			organization;
-
-
-
-	bool				cap_frames;
-	float				dt;
 };
 
 extern j1App* App; 
