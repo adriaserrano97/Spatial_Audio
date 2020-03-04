@@ -83,5 +83,8 @@
     </ClCompile>
     <ClCompile Include="j1App.cpp" />
     <ClCompile Include="j1Main.cpp" />
+    <ClCompile Include="p2Log.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
