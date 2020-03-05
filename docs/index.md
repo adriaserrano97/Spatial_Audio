@@ -27,28 +27,28 @@ Enjoy!
 
 ## Documentation
 - Please use this
-https://www.libsdl.org/projects/SDL_mixer/docs/index.html
+-- https://www.libsdl.org/projects/SDL_mixer/docs/index.html
 
 - Nice informative article
-https://www.gamasutra.com/blogs/RobBridgett/20190619/344991/The_Positive_Future_of_Spatial_Audio_for_Games.php
+-- https://www.gamasutra.com/blogs/RobBridgett/20190619/344991/The_Positive_Future_of_Spatial_Audio_for_Games.php
 
 - Fun related videos. Don't look for answers to your bugs here, but they are interessant 
-https://www.youtube.com/watch?v=L2Kckjq0Gcs
+-- https://www.youtube.com/watch?v=L2Kckjq0Gcs
 
-https://www.youtube.com/watch?v=M-MhP2T3Adw 
+-- https://www.youtube.com/watch?v=M-MhP2T3Adw 
 
 - If you feel lost, start here
-https://lazyfoo.net/tutorials/SDL/21_sound_effects_and_music/index.php
+-- https://lazyfoo.net/tutorials/SDL/21_sound_effects_and_music/index.php
  
 - In this topic, some flaws of SDL are exposed. Useful to know, saves time
-https://www.gamedev.net/forums/topic/188112-3d-sound-with-sdl
+-- https://www.gamedev.net/forums/topic/188112-3d-sound-with-sdl
 
-https://discourse.libsdl.org/t/surround-multichannel-sound/8639
+-- https://discourse.libsdl.org/t/surround-multichannel-sound/8639
 
 - These are technical. Unless you're into sound design and/or sound engineering, you have nothing to see (or hear lmao) here
-https://www.semanticscholar.org/paper/Game-Sound-Technology-and-Player-Interaction%3A-and-Grimshaw/93a979a7af230e4ca00a13dfca6f4b2abd3aa4bf
+-- https://www.semanticscholar.org/paper/Game-Sound-Technology-and-Player-Interaction%3A-and-Grimshaw/93a979a7af230e4ca00a13dfca6f4b2abd3aa4bf
 
-https://www.acousticalsurfaces.com/acoustic_IOI/101home.htm
+-- https://www.acousticalsurfaces.com/acoustic_IOI/101home.htm
 
 
 
