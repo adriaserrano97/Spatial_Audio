@@ -1,2 +1,2 @@
-SPATIAL AUDIO
-Spatial audio in videogames
+#SPATIAL AUDIO
+#Comprehensive Guide
