@@ -15,22 +15,32 @@ Sounds great, doesn't it? Let me show you how to do it!
 Here comes the bad news: videogame industry has not taken audio to the levels of cinema (yet). One (if not the main) reason why is quite simple: the devices we use to propagate audio. Videogames are limited to only 2 sources of sound (either the left/right of the headphones or similar setups with buffers). For that reason, videogames have developed tools to emulate a realistic sound. Some cutting edge games in that regard are:
 
 - Shadow of the tomb rider
-![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/tombrider.jpg)
+<p align="center">
+<img src="https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/tombrider.jpg">
+</p>
 
 Honestly, it's insane. [Check the masterminds behind it talking about it here](https://www.youtube.com/watch?v=Y6LRk7SXaE8) . If you have not played it, [just hear how amazing it sounds](https://www.youtube.com/watch?v=F_K1PCmga7w) or even better, just buy it and give it a try.
 
 - For Honor
-![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/Forhonor.jpg)
+<p align="center">
+<img src="https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/Forhonor.jpg">
+</p>
+
 Here we have an example of great audio engancing not only immersion, but gameplay. As you can see (or rather, hear) the spatial sensation feeled in For Honor lets the player react to combat situations in a faster, better way. [Check out the amazing work done in For Honor here](https://www.youtube.com/watch?v=f_rxH8uN0vQ) .
 
 
 - Star Wars Battlefront
-![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/battlefront.jpg)
+<p align="center">
+<img src="https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/battlefront.jpg">
+</p>
 Same scenario as in Shadow of the Tomb Rider. [Just give it 20 minutes of your life](https://www.youtube.com/watch?v=DU7FCygSUug) and really take it in.
 
 
 - Overwatch
-![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/overwatch.jpg)
+<p align="center">
+<img src="https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/overwatch.jpg">
+</p>
+
 Most people already know how amazing this game sounds. If not, completely worth it to [check it out](https://www.youtube.com/watch?v=O161-WNZBP4). 
 
 ## What can we do?
