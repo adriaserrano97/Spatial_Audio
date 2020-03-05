@@ -21,10 +21,7 @@ Sounds great, doesn't it? Let me show you how to do it!
 Here comes the bad news: videogame industry has not taken audio to the levels of cinema (yet). One (if not the main) reason why is quite simple: the devices we use to propagate audio. Videogames are limited to only 2 sources of sound (either the left/right of the headphones or similar setups with buffers). For that reason, videogames have developed tools to emulate a realistic sound. Some cutting edge games in that regard are:
 
 - Shadow of the tomb rider
-![](tombrider.jpg)
-<p align="center">
-<img src="https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/tombrider.jpg">
-</p>
+<img src="https://https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/tombrider.jpg"> </br>
 
 Honestly, it's insane. [Check the masterminds behind it talking about it here](https://www.youtube.com/watch?v=Y6LRk7SXaE8) . If you have not played it, [just hear how amazing it sounds](https://www.youtube.com/watch?v=F_K1PCmga7w) or even better, just buy it and give it a try.
 
