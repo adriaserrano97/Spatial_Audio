@@ -17,8 +17,15 @@ Here comes the bad news: videogame industry has not taken audio to the levels of
 
 - Shadow of the tomb rider
 ![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/tombrider.jpg)
+
+Honestly, it's insane. [Check the masterminds behind it talking about it here](https://www.youtube.com/watch?v=Y6LRk7SXaE8) . If you have not played it, [just hear how amazing it sounds](https://www.youtube.com/watch?v=F_K1PCmga7w) or even better, just buy it and give it a try.
+
 - For Honor
 ![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/Forhonor.jpg)
+Here we have an example of great audio engancing not only immersion, but gameplay. As you can see (or rather, hear) the spatial sensation feeled in For Honor lets the player react to combat situations in a faster, better way. [Check out the amazing work done in For Honor here](https://www.youtube.com/watch?v=f_rxH8uN0vQ) .
+
+While
+
 - Star Wars Battlefront
 ![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/battlefront.jpg)
 - Overwatch
