@@ -16,9 +16,13 @@ Sounds great, doesn't it? Let me show you how to do it!
 Here comes the bad news: videogame industry has not taken audio to the levels of cinema (yet). One (if not the main) reason why is quite simple: the devices we use to propagate audio. Videogames are limited to only 2 sources of sound (either the left/right of the headphones or similar setups with buffers). For that reason, videogames have developed tools to emulate a realistic sound. Some cutting edge games in that regard are:
 
 - Shadow of the tomb rider
+![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/tombrider.jpg)
 - For Honor
+![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/Forhonor.jpg)
 - Star Wars Battlefront
+![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/battlefront.jpg)
 - Overwatch
+![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/overwatch.jpg)
 
 ## What can we do?
 
