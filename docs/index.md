@@ -11,11 +11,20 @@ Sounds great, doesn't it? Let me show you how to do it!
 
 ## What does the industry have to offer?
 
-
+Here comes the bad news: videogame industry has not taken audio to the levels of cinema (yet). One (if not the main) reason why is quite simple: the devices we use to propagate audio. Videogames are limited to only 2 sources of sound (either the left/right of the headphones or similar setups with buffers). For that reason, videogames have developed tools to emulate a realistic sound. Some cutting edge games in that regard are:
+- Shadow of the tomb rider
+- For Honor
+- Star Wars Battlefront
+- Overwatch
 
 ## What can we do?
 
-Remember to download the zip in release! It contains the TODOs that will help you put to pratice all this knowledge.
+In this tutorial, we will tackle the problem using the SDL library. With functions present in SDL (SDL_mixer extension, to be more specific) and a little imagination we will create a structure which enables us to create a semblance of realistic sound in our own games.
+
+What are you waiting for? Download the ZIP in the release and look for the "TODO". Follow them in order and they will guide you through the process from playing a song in loop all the way to creating your own function to micro-manage sfx reproduction taking into account angle, distance from camera, channel, fade and volume.
+
+Enjoy!
+
 ## Documentation
 
 
