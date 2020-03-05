@@ -1,4 +1,10 @@
 # SPATIAL AUDIO 
+I am <https://www.linkedin.com/in/adri%C3%A0-serrano-l%C3%B3pez-7196a91a3/>(Adrià Serrano), student of the
+<https://www.citm.upc.edu/ing/estudis/graus-videojocs/>(Bachelor’s Degree in
+Video Games by UPC at CITM). This content is generated for the second year’s
+subject Project 2, under supervision of lecturer
+<https://www.linkedin.com/in/mgarrigo/>(Marc Garrigó).
+
 ## Introduction to the problem
 
 We all love music, don't we? 
