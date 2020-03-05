@@ -24,12 +24,15 @@ Honestly, it's insane. [Check the masterminds behind it talking about it here](h
 ![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/Forhonor.jpg)
 Here we have an example of great audio engancing not only immersion, but gameplay. As you can see (or rather, hear) the spatial sensation feeled in For Honor lets the player react to combat situations in a faster, better way. [Check out the amazing work done in For Honor here](https://www.youtube.com/watch?v=f_rxH8uN0vQ) .
 
-While
 
 - Star Wars Battlefront
 ![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/battlefront.jpg)
+Same scenario as in Shadow of the Tomb Rider. [Just give it 20 minutes of your life](https://www.youtube.com/watch?v=DU7FCygSUug) and really take it in.
+
+
 - Overwatch
 ![](https://github.com/adriaserrano97/Spatial_Audio/blob/master/docs/overwatch.jpg)
+Most people already know how amazing this game sounds. If not, completely worth it to [check it out](https://www.youtube.com/watch?v=O161-WNZBP4). 
 
 ## What can we do?
 
