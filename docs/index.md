@@ -9,7 +9,6 @@ For this reason, I'm sure you will want to add music to you game eventually. Not
 
 Sounds great, doesn't it? Let me show you how to do it!
 
-<iframe src="https://giphy.com/embed/sPjVUcrugny4U" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/favorite-music-video-sPjVUcrugny4U">via GIPHY</a></p>
 
 ## What does the industry have to offer?
 
