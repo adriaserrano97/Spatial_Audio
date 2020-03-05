@@ -1,4 +1,4 @@
-# SPATIAL AUDIO </br>
+# SPATIAL AUDIO 
 ## Introduction to the problem
 
 We all love music, don't we? 
@@ -10,6 +10,9 @@ For this reason, I'm sure you will want to add music to you game eventually. Not
 Sounds great, doesn't it? Let me show you how to do it!
 
 ## What does the industry have to offer?
+
+
+
 ## What can we do?
 
 Remember to download the zip in release! It contains the TODOs that will help you put to pratice all this knowledge.
